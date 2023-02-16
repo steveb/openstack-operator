@@ -95,8 +95,8 @@ spec:
       ironicAPI:
         replicas: 1
         containerImage: quay.io/tripleozedcentos9/openstack-ironic-api:current-tripleo
-      ironicConductor:
-        replicas: 1
+      ironicConductors:
+      - replicas: 1
         containerImage: quay.io/tripleozedcentos9/openstack-ironic-conductor:current-tripleo
         pxeContainerImage: quay.io/tripleozedcentos9/openstack-ironic-pxe:current-tripleo
       ironicInspector:
